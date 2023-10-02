@@ -1,0 +1,278 @@
+/* Typography imported from Google Fonts */
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display|Source+Sans+Pro:200,400');
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Playfair Display', Bauhaus 93;
+}
+
+.font {
+    font-size: 30px;
+}
+p, a {
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+/* Generic styles */
+html {
+  scroll-behavior: smooth;
+}
+
+.a1 {
+  background-color: goldenrod;
+  text-decoration: none;
+  color: white;
+  border-radius: .25rem;
+  text-align: center;
+  display: inline-block;
+  transition: all .3s;
+}
+
+a:hover {
+  opacity: .6;
+}
+
+body {
+    background: url('https://wallpapers.com/images/featured/black-wuuaobghtdllhliu.jpg') center;
+}
+
+
+.g2{
+  width: 100px; /* Set the desired width */
+  height: auto;
+  justify-content: center; /* Centers horizontally */
+  align-items: center; /* Centers vertically */
+}
+
+/* Styles for the hero image */
+.hero {
+  /* Photo by mnm.all on Unsplash */
+  background: url('https://images.squarespace-cdn.com/content/v1/6252c3973a854032f890b812/b9f5d046-8230-4745-bf40-c1e1f2f15ee4/porkadoboheader.png') center;
+  background-size: cover;
+  padding: 10rem 5rem;
+  /* grid styles */
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 2fr));
+  align-items: center;
+}
+
+.hero > * {
+  color: white;
+}
+
+.hero > h1 {
+  font-size: 3rem;
+  padding-bottom: 0.5rem;
+}
+
+.hero > article > p {
+  font-size: 1.3rem;
+  font-weight: 500;
+}
+
+.hero > article > a {
+  padding: 1rem;
+  margin-top: .75rem;
+}
+
+/* breweries styles */
+.lb {
+  padding: 2rem;
+}
+
+.lb > ul {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  grid-gap: 1rem;
+}
+
+.lb > ul > li {
+  border: 1px solid #E2E2E2;
+  border-radius: .5rem;
+}
+
+.lb > ul > li > figure {
+  max-height: 220px;
+  overflow: hidden;
+  border-top-left-radius: .5rem;
+  border-top-right-radius: .5rem;
+  position: relative;
+}
+
+.lb > ul > li > figure > img {
+  width: 100%;
+}
+
+.lb > ul > li > figure > figcaption {
+  position: absolute;
+  bottom: 0;
+  background-color: rgba(0,0,0,.7);
+  width: 100%;
+}
+
+.lb > ul > li > figure > figcaption > h3 {
+  color: white;
+  padding: .75rem;
+  font-size: 1.25rem;
+}
+
+.lb > ul > li > p {
+  font-size: 1rem;
+  line-height: 1.5;
+  padding: 1rem .75rem;
+  color: #666666;
+}
+
+.lb > ul > li > a {
+  padding: .5rem 1rem;
+  margin: .5rem;
+}
+
+/* footer */
+footer {
+  background-color: #333;
+  padding: .75rem;
+  color: white;
+  text-align: center;
+  font-size: .75rem;
+}
+
+
+.center {
+  display: flex; /* Use flexbox to center vertically and horizontally */
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  width: 300px;
+}
+
+
+body {
+    background-color:white;
+}
+
+.icon {
+    height: 45px;
+    width: auto;
+    margin: 10px 0px 0px 0px;
+}
+
+.searchBar {
+    width: 30%;
+}
+
+.header-text {
+    display: inline-flex;
+    align-items: center;
+    font-weight: 500;
+    font-family: Impact, fantasy;
+    margin: 0;
+}
+
+.header-text>h3 {
+    font-size: xx-large;
+}
+
+.header-text>div {
+    text-align: center;
+    line-height: 75px;
+}
+
+.table-header {
+    font-weight: 500;
+    font-family: Impact, fantasy;
+}
+
+.header-container {
+    margin-top: 0%;
+    padding: 10px;
+}
+
+h3 {
+    font-family: Impact, fantasy;
+}
+
+.images {
+    max-width: 100px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.video-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 500px;
+    /* margin-left: 25%; */
+    /* Adjust the height as needed */
+}
+
+footer {
+    background-color: #333;
+    /* Footer background color */
+    color: #fff;
+    /* Text color */
+    padding: 20px;
+    /* Padding around the content */
+    text-align: center;
+    /* Center-align the content */
+}
+
+@media (min-width: 990px) {
+    .flex-container {
+        display: flex;
+        align-items: stretch;
+        justify-content: center;
+        /* Horizontally center content */
+    }
+
+    .header-text>h3 {
+        font-size: medium;
+    }
+}
+
+/* Media query for screens with a maximum width of 989px and below */
+@media (max-width: 989px) {
+
+    /* Styles for screens below 990px in width */
+    /* Customize your layout for screens below 990px wide here */
+    .video-container {
+        width: 100%;
+        height: 400px;
+        /* Adjust the height as needed */
+        margin: 0 0 0 0;
+        padding: 0 0 0 0;
+    }
+
+    .flex-container {
+        display: flex;
+        align-items: stretch;
+        /* Horizontally center content */
+    }
+
+    .searchBar {
+        width: 75%;
+    }
+}
+
+/* Media query for screens with a maximum width of 989px and below */
+@media (max-width: 720px) {
+
+    /* Styles for screens below 990px in width */
+    /* Customize your layout for screens below 990px wide here */
+    .video-container {
+        height: 300px;
+        /* Adjust the height as needed */
+    }
+
+    .searchBar {
+        width: 60%;
+    }
+}
+
+.r1 {
+  width: 500px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
